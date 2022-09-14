@@ -1,0 +1,137 @@
+@import "./variables.css";
+
+@font-face {
+    font-family: "Monserat";
+    src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Monserat";
+    color : var(--primary-text-color)
+}
+
+fieldset {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.header , .footer , .nav {
+    display: flex;
+}
+
+
+.header , .footer{
+    background-color: var(--primary-bg-color);
+    font-size: var(--md-font);
+    padding: var(--md-margin);
+}
+
+.header {
+    justify-content: space-around;
+}
+
+.logo {
+    width: 2rem;
+}
+
+.searchbar__input {
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var( --secondary-border-color);
+    transition: 400ms ease ;
+}
+
+.searchbar__input:focus {
+    border: none;
+    outline: none;
+    padding: var(--sm-margin);
+    background-color: inherit;
+    border-bottom: 2px solid var(--warning-border-color);
+
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+.nav__link {
+    padding: 0 var(--lg-margin);
+}
+
+.shit {
+    display: flex;
+    width: 100%;
+}
+
+.left-sidebar,.right-sidebar{
+    padding: var(--xl-margin );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar__item:first-of-type {
+    margin-top: var(--sm-margin );
+}
+
+.left-sidebar {
+    background: linear-gradient(var(--primary-bg-color) , var(--secondary-bg-color));
+}
+
+.right-sidebar {
+    background: linear-gradient(var(--primary-bg-color) , var(--secondary-bg-color));
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(var(--primary-bg-color) , var(--secondary-bg-color));
+    height: 100vh;
+    padding: 4rem;
+}
+
+.main__poster {
+    width: 100%;
+    border-radius: 1rem;
+    opacity: .6;
+    transition: 300ms ease-in-out;
+}
+
+.main__poster:hover {
+
+    opacity: 1;
+    box-shadow: var(--main-box-shadow) var(--secondary-border-color);
+}
+
+.footer {
+    background-color: var(--secondary-bg-color);
+    justify-content: center;    
+}
+
+/* @media (min-width:320px) and (max-width:575px) {
+    .header {
+        background-color: violet;
+    }
+}
+
+@media (min-width:576px) and (max-width:1024px) {
+    .header {
+        background-color: aqua;
+    }
+} */

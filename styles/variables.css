@@ -1,0 +1,29 @@
+:root {
+    /* TODO Background-color */
+    --primary-bg-color : darkmagenta; 
+    --secondary-bg-color : darkviolet;
+
+    /*  TODO Text-color */
+    --primary-text-color : white;
+    --secondary-text-color : lightblue;
+
+    /* TODO Border-color */
+    --warning-border-color : white ;
+    --primary-border-color : indigo;
+    --secondary-border-color : magenta;
+
+    /* TODO Margin */
+    --xl-margin : 5rem;
+    --lg-margin : 2rem;
+    --md-margin : 1.3rem;
+    --sm-margin : .8rem;
+
+    /* TODO font  */
+    --lg-font : 1.6rem;
+    --md-font : 1.2rem;
+    --sm-font : 1rem;
+
+    /* TODO box-shadow */
+    --standart-box-shadow : 3px 4px 3px;
+    --main-box-shadow : 3px 6px 8px 13px ;
+}
